@@ -4,7 +4,7 @@ using namespace std;
 void intersection(int a[], int b[], int m, int n)
 {
     int i = 0, j = 0;
-    while(i < m-1 && j < n)
+    while(i < m && j < n)
     {        
         if((a[i] == a[i-1]) && i > 0)
         {
