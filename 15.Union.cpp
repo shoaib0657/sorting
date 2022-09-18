@@ -6,12 +6,12 @@ void arrayUnion(int a[], int b[], int m, int n)
     int i = 0, j = 0;
     while(i < m && j < n)
     {
-        if(i >=1 && a[i] == a[i-1])
+        if(i > 0 && a[i] == a[i-1])
         {
             i++;
             continue;
         }
-        if(j >=1 && b[j] == b[j-1])
+        if(j > 0 && b[j] == b[j-1])
         {
             j++;
             continue;
@@ -36,7 +36,7 @@ void arrayUnion(int a[], int b[], int m, int n)
 
     while(i < m)
     {
-        if(i >=1 && a[i] == a[i-1])
+        if(i > 0 && a[i] == a[i-1])
         {
             i++;
             continue;
@@ -49,7 +49,7 @@ void arrayUnion(int a[], int b[], int m, int n)
     }
     while(j < n)
     {
-        if(i >=1 && b[j] == b[j-1])
+        if(j > 0 && b[j] == b[j-1])
         {
             j++;
             continue;
